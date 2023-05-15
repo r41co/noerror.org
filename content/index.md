@@ -1,3 +1,8 @@
+---
+title: DNS Notes
+url: /
+---
+
 # DNS Lookup Tools Online
 
 * https://mxtoolbox.com/DNSLookup.aspx
@@ -27,10 +32,11 @@ dig +short A whoami.akamai.net
 dig +short TXT whoami.ds.akahelp.net 
 ```
 
-# DNSSEC
+# DNSSEC checkers
 
-* Online checker: https://dnsviz.net/
-* CLI: `dig +trace +dnssec <domain>`
+* https://dnsviz.net/
+* https://dnssec-analyzer.verisignlabs.com/
+* or: `dig +trace +dnssec <domain>`
 
 # Misc URLs
 

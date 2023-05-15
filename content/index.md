@@ -1,6 +1,6 @@
 ---
 title: DNS Notes
-url: /
+url: /index.html
 ---
 
 # DNS Lookup Tools Online

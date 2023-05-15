@@ -3,3 +3,11 @@ title: NOERROR
 baseURL: https://noerror.org/
 enableEmoji: true
 theme: flex
+menu:
+  nav:
+    - name: DNS
+      url: dns/
+      weight: 1
+    - name: About
+      url: about/
+      weight: 2

@@ -6,8 +6,8 @@ theme: flex
 menu:
   nav:
     - name: DNS
-      url: dns/
+      url: /
       weight: 1
     - name: About
-      url: about/
+      url: /about.html
       weight: 2

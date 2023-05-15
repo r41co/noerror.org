@@ -1,6 +1,6 @@
 ---
 title: About
-url: about.html
+url: /about.html
 ---
 
 Just NOERROR!

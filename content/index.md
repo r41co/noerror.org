@@ -1,4 +1,4 @@
-# List of DNS Tools Online
+# DNS Lookup Tools Online
 
 * https://mxtoolbox.com/DNSLookup.aspx
 * https://dnschecker.org/all-dns-records-of-domain.php
@@ -12,19 +12,26 @@
 * https://dnslookup.online/
 * https://www.cloudns.net/tools/
 
-# List of special DNS records
+# DNS whoami records
 
-## Whoami records
+## Google
 
 ```
-# Google
 dig -t TXT +short o-o.myaddr.l.google.com
+```
 
-# Akamai
+## Akamai
+
+```
 dig +short A whoami.akamai.net 
 dig +short TXT whoami.ds.akahelp.net 
-
-# NS1
-dig +short whoami.geo.tools.nsone.net txt
-dig +short whoami-ecs.geo.tools.nsone.net txt
 ```
+
+# DNSSEC
+
+* Online checker: https://dnsviz.net/
+* CLI: `dig +trace +dnssec <domain>`
+
+# Misc URLs
+
+* Public DNS Servers: https://public-dns.info/

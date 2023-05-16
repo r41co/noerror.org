@@ -1,5 +1,40 @@
 ---
-title: NOERROR
 baseURL: https://noerror.org/
+title: NOERROR
 enableEmoji: true
 theme: flex
+
+params:
+  color: teal           # Any color in CSS syntax
+  width: 42rem          # Any length in CSS syntax / leave empty to span page
+  divider: \a0          # Any string in CSS syntax / leave empty for no divider
+  footer: >-            # HTML spaces (&#32;) are needed before HTML elements
+    &copy; <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative
+    Commons Attribution 4.0 International License</a>
+  rss: To subscribe to this RSS feed, copy its address and paste it into your
+    favorite feed reader.
+  noClasses: true       # Set to the same value as markup.highlight.noClasses
+  headingoffset: 0      # Change heading levels when rendering markdown
+  linkicons: false      # Set to hover or true to add a link icon to headings
+  summaries: false      # Set to true to show summaries of posts on homepage
+  schema: false         # Set to true to add Schema.org metadata
+  opengraph: false      # Set to true to add Open Graph metadata
+  twittercards: false   # Set to true to add Twitter Cards metadata
+  utterances:
+    repo:               # Set to Utterances repo URL to add Utterances comments
+    issueterm:          # Leave empty for the default blog post to issue mapping
+    theme:              # Leave empty to use the adaptive Utterances dark theme
+
+menu:
+  nav:
+    - name: DNS
+      url: /dns
+      weight: 1
+    - name: About
+      url: /about
+      weight: 2
+
+mediaTypes:
+  font/woff2:
+    suffixes:
+      - woff2

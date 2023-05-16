@@ -17,7 +17,19 @@ layout: single
 * https://dnslookup.online/
 * https://www.cloudns.net/tools/
 
-# DNS whoami records
+# DNS Propagation Delay Checks Online
+
+* https://dnschecker.org/
+* https://www.whatsmydns.net/
+* https://dnspropagation.net
+* https://dnsmap.io/
+* https://www.gdnspc.com/
+* https://whatsmydns.me/
+* https://www.site24x7.com/tools/dns-propagation.html
+* https://kiemtradns.com
+* https://showmydns.net/
+
+# DNS `whoami` Records
 
 ## Google
 

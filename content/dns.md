@@ -3,6 +3,41 @@ title: DNS Notes
 layout: single
 ---
 
+# Fun with DNS RCODE's
+
+`NOERROR` is the most common DNS return code (RCODE), but there are many other and some of them are very seldom seen in the wild.
+
+```
+NOERROR
+FORMERR
+SERVFAIL
+NXDOMAIN
+NOTIMP
+REFUSED
+YXDOMAIN
+YXRRSET
+NXRRSET
+NOTAUTH
+NOTZONE
+```
+
+See the exhaustive list here: https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-6
+
+This special DNS record will give you a response with the RCODE you want. Just do a DNS query of `<RCODE>._.noerror.org` against `r1.r41.co` and you will get to see some of the rare RCODE's
+
+Example:
+
+```
+$ dig +noall +comments @r1.r41.co YXDOMAIN._.noerror.org
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: YXDOMAIN, id: 34370
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+```
+
+# Check Your DNS Resolver's Unicast IP
+
+* https://resolver.r41.co (you can/should refresh a few times)
+
 # DNS Lookup Tools Online
 
 * https://mxtoolbox.com/DNSLookup.aspx
@@ -44,7 +79,7 @@ dig +short A whoami.akamai.net
 dig +short TXT whoami.ds.akahelp.net 
 ```
 
-# DNSSEC checkers
+# DNSSEC Checkers
 
 * https://dnsviz.net/
 * https://dnssec-analyzer.verisignlabs.com/

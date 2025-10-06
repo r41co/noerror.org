@@ -23,12 +23,12 @@ NOTZONE
 
 See the exhaustive list here: https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-6
 
-This special DNS record will give you a response with the RCODE you want. Just do a DNS query of `<RCODE>._.noerror.org` against `r1.r41.co` and you will get to see some of the rare RCODE's
+This special DNS record will give you a response with the RCODE you want. Just do a DNS query of `<RCODE>._.noerror.org` against `dns.noerror.org` and you will get to see some of the rare RCODE's
 
 Example:
 
 ```
-$ dig +noall +comments @r1.r41.co YXDOMAIN._.noerror.org
+$ dig +noall +comments @dns.noerror.org YXDOMAIN._.noerror.org
 ;; Got answer:
 ;; ->>HEADER<<- opcode: QUERY, status: YXDOMAIN, id: 34370
 ;; flags: qr aa rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
@@ -36,7 +36,7 @@ $ dig +noall +comments @r1.r41.co YXDOMAIN._.noerror.org
 
 # Check Your DNS Resolver's Unicast IP
 
-* https://resolver.r41.co (you can/should refresh a few times)
+* https://info.resolver.nsone.net/ (you can/should refresh a few times)
 
 # DNS Lookup Tools Online
 
